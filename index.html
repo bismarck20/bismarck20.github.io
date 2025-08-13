@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio Profesional - Bismarck Vicente</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #1C2833;
+            color: #ECF0F1;
+        }
+        header {
+            background-color: #17202A;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid #117A65;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+        header p {
+            color: #BDC3C7;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #212F3C;
+        }
+        nav button {
+            background: none;
+            border: none;
+            padding: 15px 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        nav button:hover,
+        nav button.active {
+            background-color: #117A65;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .tab {
+            display: none;
+            animation: fadeIn 0.4s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .profile-img {
+            width: 180px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50% / 60%;
+            margin-bottom: 15px;
+            border: 3px solid #117A65;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            border-bottom: 2px solid #117A65;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .section {
+            margin-top: 15px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            background: #273746;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .article {
+            background: #273746;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        a {
+            color: #1ABC9C;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bismarck Vicente Pinedo</h1>
+    <p>Analista de Riesgos Financieros, Modelos Cuantitativos y Análisis de Datos</p>
+</header>
+
+<nav>
+    <button class="tablink active" onclick="openTab(event, 'cv')">Currículum</button>
+    <button class="tablink" onclick="openTab(event, 'articulos')">Artículos</button>
+    <button class="tablink" onclick="openTab(event, 'proyectos')">Proyectos</button>
+    <button class="tablink" onclick="openTab(event, 'contacto')">Contacto</button>
+</nav>
+
+<div class="content">
+
+    <!-- Pestaña CV -->
+    <div id="cv" class="tab" style="display: block;">
+            <center>
+            <div style="display: flex; align-items: center; max-width: 800px; gap: 20px;">
+                <!-- Foto a la izquierda -->
+                <img src="foto.jpg" alt="Foto de perfil" style="width: 250px; height: auto; border-radius: 18px; box-shadow: none;">
+
+                <!-- Texto a la derecha -->
+                <div>
+                    <h2>Resumen Profesional</h2>
+                    <p style="max-width: 450px; display: inline-block; vertical-align: middle; margin: 0;">
+                        Analista con sólida formación en gestión de riesgos financieros, normativa ASFI, y modelado cuantitativo (crédito, liquidez y mercado). Experiencia en manejo de datos, inteligencia de negocios y desarrollo de indicadores clave. Actualmente enfocado en modelos de Machine Learning para la banca.
+                    </p>
+                </div>
+            </div>
+        </center>
+    
+
+
+        <!-- Redes sociales -->
+        <div style="margin-top: 30px; margin-bottom: 25px; display: flex; gap: 20px; align-items: center; max-width: 300px;">
+            <a href="https://www.linkedin.com/in/bismarckvicente/" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: #0A66C2; font-weight: 200; font-family: Arial, sans-serif;">
+                <img src="linkedin.png" alt="LinkedIn" style="height: 30px;">
+                <span>bismarckvicente</span>
+            </a>
+            <a href="https://www.youtube.com/@financeandrisk7648" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #a70606; font-weight: 600; font-family: Arial, sans-serif; white-space: nowrap;">
+                <img src="logo_youtube.jpg" alt="YouTube" style="height: 30px;">
+                <span>Finance and Risk</span>
+            </a>
+            <a href="https://github.com/bismarck20" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: #feffff; font-weight: 600; font-family: Arial, sans-serif;">
+                <img src="github.png" alt="GitHub" style="height: 30px;">
+                <span>bismarck20</span>
+            </a>
+        </div>
+
+        <!-- Lenguajes de programación -->
+        <div style="margin-top: 15px;">
+            <h3>Lenguajes</h3>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="RStudio" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" style="height: 35px; vertical-align: middle; margin: 5px;">
+            </p>
+        </div>
+
+        <!-- Software -->
+        <div style="margin-top: 20px;">
+            <h3>Software</h3>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" alt="Excel" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="eviews.png" alt="EViews" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="stata.png" alt="Stata" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="Oracle_Crystal_Ball.png" alt="CrystalBall" style="height: 35px; vertical-align: middle; margin: 5px;">
+                <img src="risk.jpg" alt="risk" style="height: 35px; vertical-align: middle; margin: 5px;">
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li><strong>Pasante de Generación de Dashboards Financieros</strong> - ENDE Transmisión (Sep. 2024 - Dic. 2024)<br>Diseño y desarrollo de dashboards financieros en Tableau para el área de Finanzas y Tesorería, validación de datos, creación de indicadores clave, y presentación de resultados a gerencia.</li>
+                <li><strong>Analista de Administración Crediticia</strong> - Banco FASSIL S.A. (Oct. 2022 - Abr. 2023)<br>Revisión y análisis de operaciones crediticias, evaluación de capacidad de pago y cumplimiento normativo, coordinación con el área de negocios para aprobación y desembolso.</li>
+                <li><strong>Pasante - Departamento de Recaudaciones</strong> - SEMAPA (Dic. 2021 - Mar. 2022)<br>Apoyo en facturación, gestión documental, cruce de información y preparación de carpetas para auditoría interna.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Educación</h2>
+            <ul>
+                <li>Licenciatura en Ingeniería Financiera - Universidad Mayor de San Simón (2020 - 2024) Egresado</li>
+                <li>Licenciatura en Administración de Empresas - Universidad del Valle (2015 - 2020)</li>
+                <li>Maestría en Gestión de Riesgos - Universidad Católica Boliviana (2023 - 2024)</li>
+                <li>Maestría en Finanzas - Universidad Católica Boliviana (2023 - 2025)</li>
+                <li>Diplomado en Banca y Finanzas - Universidad Católica Boliviana (2021)</li>
+                <li>Diplomado en Gestión de Riesgos Financieros - Universidad Mayor de San Simón (2022)</li>
+                <li>Diplomado en R y Python para Analítica de Datos - Universidad del Valle (2023)</li>
+                <li>Diplomado en Métodos Cuantitativos - Universidad Privada Boliviana (2023)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certificaciones Relevantes</h2>
+            <ul>
+                <li>Machine Learning para Banca y Finanzas con Python - GestiónGPA</li>
+                <li>Modelos Cuantitativos de Riesgo de Liquidez y Mercado - GestiónGPA</li>
+                <li>Curso Especializado Power BI Avanzado aplicado a Finanzas</li>
+                <li>Curso Especializado Power BI Avanzado aplicado a Finanzas</li>
+                <li>Curso de Introducción a Tableau para Visualización de Datos</li>
+                <li>Certificación en Gestión de Riesgos Financieros - ASFI</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pestaña Artículos -->
+    <div id="articulos" class="tab">
+        <h2>Artículos Académicos y Publicaciones</h2>
+        <div class="article">
+            <h3>Modelos Cuantitativos para la Predicción de Riesgo Crediticio en Bolivia</h3>
+            <p>Este artículo presenta una revisión de modelos estadísticos y machine learning aplicados al análisis del riesgo crediticio en bancos bolivianos, destacando variables macroeconómicas y financieras relevantes.</p>
+            <a href="#" target="_blank">Leer más</a>
+        </div>
+        <div class="article">
+            <h3>Impacto del Riesgo de Liquidez en la Estabilidad Financiera</h3>
+            <p>Se analizan los mecanismos de contagio entre bancos y cómo el riesgo de liquidez puede amplificar la inestabilidad financiera en mercados emergentes, con foco en Bolivia.</p>
+            <a href="#" target="_blank">Leer más</a>
+        </div>
+        <div class="article">
+            <h3>Uso de Redes Neuronales para Proyecciones Financieras</h3>
+            <p>Exploración del uso de redes neuronales artificiales para predecir la solvencia bancaria, comparando resultados con modelos tradicionales como GMM y regresiones lineales.</p>
+            <a href="#" target="_blank">Leer más</a>
+        </div>
+    </div>
+
+    <!-- Pestaña Proyectos -->
+    <div id="proyectos" class="tab">
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li>
+                <strong>Dashboard Financiero para ENDE Transmisión</strong> (2024)<br>
+                Desarrollo de dashboards interactivos en Tableau para el análisis financiero y de gestión, facilitando la toma de decisiones estratégicas.
+            </li>
+            <li>
+                <strong>Modelo de Predicción de Riesgo Crediticio</strong> (2023)<br>
+                Implementación de un modelo de machine learning para anticipar morosidad en cartera de créditos hipotecarios usando Python y datos financieros históricos.
+            </li>
+            <li>
+                <strong>Automatización de Reportes Financieros</strong> (2022)<br>
+                Creación de macros y scripts en Excel para la generación automática de reportes mensuales en bancos múltiples.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Pestaña Contacto -->
+    <div id="contacto" class="tab">
+        <h2>Contacto</h2>
+        <p>Estoy abierto a colaboraciones y oportunidades profesionales. Puedes contactarme a través de:</p>
+        <ul>
+            <li>Email: <a href="mailto:bismarckvp20@gmail.com">bismarckvp20@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/bismarckvicente/" target="_blank">www.linkedin.com/in/bismarckvicente/</a></li>
+            <!-- <li>Teléfono: +591 75</li> -->
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        // Ocultar todas las pestañas
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => tab.style.display = 'none');
+
+        // Remover clase active de todos los botones
+        const tablinks = document.querySelectorAll('nav button');
+        tablinks.forEach(btn => btn.classList.remove('active'));
+
+        // Mostrar la pestaña seleccionada
+        document.getElementById(tabName).style.display = 'block';
+
+        // Añadir clase active al botón clickeado
+        evt.currentTarget.classList.add('active');
+    }
+
+    // Mostrar la pestaña "cv" al cargar la página
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById('cv').style.display = 'block';
+        document.querySelector('nav button').classList.add('active');
+    });
+</script>
+
+</body>
+</html>
